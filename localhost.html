@@ -1,0 +1,1470 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style data-emotion="css 18lrjg1-MuiCircularProgress-root animation-61bdi0" data-s="">.css-18lrjg1-MuiCircularProgress-root{display:inline-block;color:#1976d2;-webkit-animation:animation-61bdi0 1.4s linear infinite;animation:animation-61bdi0 1.4s linear infinite;}@-webkit-keyframes animation-61bdi0{0%{-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);}100%{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}@keyframes animation-61bdi0{0%{-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);}100%{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}</style><style data-emotion="css 1idz92c-MuiCircularProgress-svg" data-s="">.css-1idz92c-MuiCircularProgress-svg{display:block;}</style><style data-emotion="css 176wh8e-MuiCircularProgress-circle animation-1p2h4ri" data-s="">.css-176wh8e-MuiCircularProgress-circle{stroke:currentColor;stroke-dasharray:80px,200px;stroke-dashoffset:0;-webkit-animation:animation-1p2h4ri 1.4s ease-in-out infinite;animation:animation-1p2h4ri 1.4s ease-in-out infinite;}@-webkit-keyframes animation-1p2h4ri{0%{stroke-dasharray:1px,200px;stroke-dashoffset:0;}50%{stroke-dasharray:100px,200px;stroke-dashoffset:-15px;}100%{stroke-dasharray:100px,200px;stroke-dashoffset:-125px;}}@keyframes animation-1p2h4ri{0%{stroke-dasharray:1px,200px;stroke-dashoffset:0;}50%{stroke-dasharray:100px,200px;stroke-dashoffset:-15px;}100%{stroke-dasharray:100px,200px;stroke-dashoffset:-125px;}}</style><meta name="viewport" content="width=device-width"><meta name="next-head-count" content="2"><noscript data-n-css=""></noscript><script defer="" nomodule="" src="./localhost_files/polyfills.js"></script><script src="./localhost_files/webpack.js" defer=""></script><script src="./localhost_files/main.js" defer=""></script><script src="./localhost_files/_app.js" defer=""></script><script src="./localhost_files/index.js" defer=""></script><script src="./localhost_files/_buildManifest.js" defer=""></script><script src="./localhost_files/_ssgManifest.js" defer=""></script><style>/*
+! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
+*//*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box; /* 1 */
+  border-width: 0; /* 2 */
+  border-style: solid; /* 2 */
+  border-color: #e5e7eb; /* 2 */
+}
+
+::before,
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
+*/
+
+html {
+  line-height: 1.5; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -moz-tab-size: 4; /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4; /* 3 */
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
+  font-feature-settings: normal; /* 5 */
+  font-variation-settings: normal; /* 6 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+body {
+  margin: 0; /* 1 */
+  line-height: inherit; /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+  border-top-width: 1px; /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font family by default.
+2. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+  border-collapse: collapse; /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  font-weight: inherit; /* 1 */
+  line-height: inherit; /* 1 */
+  color: inherit; /* 1 */
+  margin: 0; /* 2 */
+  padding: 0; /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button; /* 1 */
+  background-color: transparent; /* 2 */
+  background-image: none; /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+:-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+:disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block; /* 1 */
+  vertical-align: middle; /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+[hidden] {
+  display: none;
+}
+
+*, ::before, ::after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+.absolute {
+  position: absolute;
+}
+.flex {
+  display: flex;
+}
+.h-screen {
+  height: 100vh;
+}
+.\!w-1\/12 {
+  width: 8.333333% !important;
+}
+.w-screen {
+  width: 100vw;
+}
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.border {
+  border-width: 1px;
+}
+
+:root {
+  --header-height: 60px;
+}
+
+.header {
+  height: var(--header-height);
+  width: 100vw;
+  z-index: 10;
+  padding: 10px;
+  background-color: #fff;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+  width: 100vw;
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: -moz-hidden-unscrollable;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvc3R5bGVzL2dsb2JhbHMuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOztDQUFjLENBQWQ7OztDQUFjOztBQUFkOzs7RUFBQSxzQkFBYyxFQUFkLE1BQWM7RUFBZCxlQUFjLEVBQWQsTUFBYztFQUFkLG1CQUFjLEVBQWQsTUFBYztFQUFkLHFCQUFjLEVBQWQsTUFBYztBQUFBOztBQUFkOztFQUFBLGdCQUFjO0FBQUE7O0FBQWQ7Ozs7Ozs7Q0FBYzs7QUFBZDtFQUFBLGdCQUFjLEVBQWQsTUFBYztFQUFkLDhCQUFjLEVBQWQsTUFBYztFQUFkLGdCQUFjLEVBQWQsTUFBYztFQUFkLGNBQWM7S0FBZCxXQUFjLEVBQWQsTUFBYztFQUFkLDROQUFjLEVBQWQsTUFBYztFQUFkLDZCQUFjLEVBQWQsTUFBYztFQUFkLCtCQUFjLEVBQWQsTUFBYztBQUFBOztBQUFkOzs7Q0FBYzs7QUFBZDtFQUFBLFNBQWMsRUFBZCxNQUFjO0VBQWQsb0JBQWMsRUFBZCxNQUFjO0FBQUE7O0FBQWQ7Ozs7Q0FBYzs7QUFBZDtFQUFBLFNBQWMsRUFBZCxNQUFjO0VBQWQsY0FBYyxFQUFkLE1BQWM7RUFBZCxxQkFBYyxFQUFkLE1BQWM7QUFBQTs7QUFBZDs7Q0FBYzs7QUFBZDtFQUFBLHlDQUFjO1VBQWQsaUNBQWM7QUFBQTs7QUFBZDs7Q0FBYzs7QUFBZDs7Ozs7O0VBQUEsa0JBQWM7RUFBZCxvQkFBYztBQUFBOztBQUFkOztDQUFjOztBQUFkO0VBQUEsY0FBYztFQUFkLHdCQUFjO0FBQUE7O0FBQWQ7O0NBQWM7O0FBQWQ7O0VBQUEsbUJBQWM7QUFBQTs7QUFBZDs7O0NBQWM7O0FBQWQ7Ozs7RUFBQSwrR0FBYyxFQUFkLE1BQWM7RUFBZCxjQUFjLEVBQWQsTUFBYztBQUFBOztBQUFkOztDQUFjOztBQUFkO0VBQUEsY0FBYztBQUFBOztBQUFkOztDQUFjOztBQUFkOztFQUFBLGNBQWM7RUFBZCxjQUFjO0VBQWQsa0JBQWM7RUFBZCx3QkFBYztBQUFBOztBQUFkO0VBQUEsZUFBYztBQUFBOztBQUFkO0VBQUEsV0FBYztBQUFBOztBQUFkOzs7O0NBQWM7O0FBQWQ7RUFBQSxjQUFjLEVBQWQsTUFBYztFQUFkLHFCQUFjLEVBQWQsTUFBYztFQUFkLHlCQUFjLEVBQWQsTUFBYztBQUFBOztBQUFkOzs7O0NBQWM7O0FBQWQ7Ozs7O0VBQUEsb0JBQWMsRUFBZCxNQUFjO0VBQWQsZUFBYyxFQUFkLE1BQWM7RUFBZCxvQkFBYyxFQUFkLE1BQWM7RUFBZCxvQkFBYyxFQUFkLE1BQWM7RUFBZCxjQUFjLEVBQWQsTUFBYztFQUFkLFNBQWMsRUFBZCxNQUFjO0VBQWQsVUFBYyxFQUFkLE1BQWM7QUFBQTs7QUFBZDs7Q0FBYzs7QUFBZDs7RUFBQSxvQkFBYztBQUFBOztBQUFkOzs7Q0FBYzs7QUFBZDs7OztFQUFBLDBCQUFjLEVBQWQsTUFBYztFQUFkLDZCQUFjLEVBQWQsTUFBYztFQUFkLHNCQUFjLEVBQWQsTUFBYztBQUFBOztBQUFkOztDQUFjOztBQUFkO0VBQUEsYUFBYztBQUFBOztBQUFkOztDQUFjOztBQUFkO0VBQUEsZ0JBQWM7QUFBQTs7QUFBZDs7Q0FBYzs7QUFBZDtFQUFBLHdCQUFjO0FBQUE7O0FBQWQ7O0NBQWM7O0FBQWQ7O0VBQUEsWUFBYztBQUFBOztBQUFkOzs7Q0FBYzs7QUFBZDtFQUFBLDZCQUFjLEVBQWQsTUFBYztFQUFkLG9CQUFjLEVBQWQsTUFBYztBQUFBOztBQUFkOztDQUFjOztBQUFkO0VBQUEsd0JBQWM7QUFBQTs7QUFBZDs7O0NBQWM7O0FBQWQ7RUFBQSwwQkFBYyxFQUFkLE1BQWM7RUFBZCxhQUFjLEVBQWQsTUFBYztBQUFBOztBQUFkOztDQUFjOztBQUFkO0VBQUEsa0JBQWM7QUFBQTs7QUFBZDs7Q0FBYzs7QUFBZDs7Ozs7Ozs7Ozs7OztFQUFBLFNBQWM7QUFBQTs7QUFBZDtFQUFBLFNBQWM7RUFBZCxVQUFjO0FBQUE7O0FBQWQ7RUFBQSxVQUFjO0FBQUE7O0FBQWQ7OztFQUFBLGdCQUFjO0VBQWQsU0FBYztFQUFkLFVBQWM7QUFB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d2luZCBiYXNlO1xuQHRhaWx3aW5kIGNvbXBvbmVudHM7XG5AdGFpbHdpbmQgdXRpbGl0aWVzO1xuXG46cm9vdCB7XG4gIC0taGVhZGVyLWhlaWdodDogNjBweDtcbn1cblxuLmhlYWRlciB7XG4gIGhlaWdodDogdmFyKC0taGVhZGVyLWhlaWdodCk7XG4gIHdpZHRoOiAxMDB2dztcbiAgei1pbmRleDogMTA7XG4gIHBhZGRpbmc6IDEwcHg7XG4gIGJhY2tncm91bmQtY29sb3I6ICNmZmY7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuXG4uY29udGVudCB7XG4gIHdpZHRoOiAxMDB2dztcbiAgcGFkZGluZy10b3A6IDcwcHg7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGp1c3RpZnktY29udGVudDogZmxleC1zdGFydDtcbiAgb3ZlcmZsb3c6IC1tb3otaGlkZGVuLXVuc2Nyb2xsYWJsZTtcbn1cbiJdLCJzb3VyY2VSb290IjoiIn0= */</style><noscript id="__next_css__DO_NOT_USE__"></noscript></head><body style="overflow: hidden;"><div id="__next"></div><script src="./localhost_files/react-refresh.js"></script><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{}},"page":"/","query":{},"buildId":"development","nextExport":true,"autoExport":true,"isFallback":false,"scriptLoader":[]}</script><div id="__next-build-watcher" style="position: fixed; bottom: 10px; right: 20px; width: 0px; height: 0px; z-index: 99999;"><template shadowrootmode="open"><div id="container">
+    <div id="icon-wrapper">
+      <svg viewBox="0 0 226 200">
+        <defs>
+          <lineargradient x1="114.720775%" y1="181.283245%" x2="39.5399306%" y2="100%" id="linear-gradient">
+            <stop stop-color="#000000" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+          </lineargradient>
+        </defs>
+        <g id="icon-group" fill="none" stroke="url(#linear-gradient)" stroke-width="18">
+          <path d="M113,5.08219117 L4.28393801,197.5 L221.716062,197.5 L113,5.08219117 Z"></path>
+        </g>
+      </svg>
+    </div>
+  </div><style>
+    #container {
+      position: absolute;
+      bottom: 10px;
+      right: 30px;
+
+      border-radius: 3px;
+      background: #000;
+      color: #fff;
+      font: initial;
+      cursor: initial;
+      letter-spacing: initial;
+      text-shadow: initial;
+      text-transform: initial;
+      visibility: initial;
+
+      padding: 7px 10px 8px 10px;
+      align-items: center;
+      box-shadow: 0 11px 40px 0 rgba(0, 0, 0, 0.25), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+
+      display: none;
+      opacity: 0;
+      transition: opacity 0.1s ease, bottom 0.1s ease;
+      animation: fade-in 0.1s ease-in-out;
+    }
+
+    #container.visible {
+      display: flex;
+    }
+
+    #container.building {
+      bottom: 20px;
+      opacity: 1;
+    }
+
+    #icon-wrapper {
+      width: 16px;
+      height: 16px;
+    }
+
+    #icon-wrapper > svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    #icon-group {
+      animation: strokedash 1s ease-in-out both infinite;
+    }
+
+    @keyframes fade-in {
+      from {
+        bottom: 10px;
+        opacity: 0;
+      }
+      to {
+        bottom: 20px;
+        opacity: 1;
+      }
+    }
+
+    @keyframes strokedash {
+      0% {
+        stroke-dasharray: 0 226;
+      }
+      80%,
+      100% {
+        stroke-dasharray: 659 226;
+      }
+    }
+  </style></template></div><nextjs-portal><template shadowrootmode="open"><style>
+        :host {
+          all: initial;
+
+          /* the direction property is not reset by 'all' */
+          direction: ltr;
+        }
+
+        /*!
+         * Bootstrap Reboot v4.4.1 (https://getbootstrap.com/)
+         * Copyright 2011-2019 The Bootstrap Authors
+         * Copyright 2011-2019 Twitter, Inc.
+         * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+         * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+         */
+        *,
+        *::before,
+        *::after {
+          box-sizing: border-box;
+        }
+
+        :host {
+          font-family: sans-serif;
+          line-height: 1.15;
+          -webkit-text-size-adjust: 100%;
+          -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+
+        article,
+        aside,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        main,
+        nav,
+        section {
+          display: block;
+        }
+
+        :host {
+          margin: 0;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+            'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+            'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+            'Noto Color Emoji';
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 1.5;
+          color: #212529;
+          text-align: left;
+          background-color: #fff;
+        }
+
+        [tabindex='-1']:focus:not(:focus-visible) {
+          outline: 0 !important;
+        }
+
+        hr {
+          box-sizing: content-box;
+          height: 0;
+          overflow: visible;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          margin-top: 0;
+          margin-bottom: 8px;
+        }
+
+        p {
+          margin-top: 0;
+          margin-bottom: 16px;
+        }
+
+        abbr[title],
+        abbr[data-original-title] {
+          text-decoration: underline;
+          -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+          cursor: help;
+          border-bottom: 0;
+          -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+        }
+
+        address {
+          margin-bottom: 16px;
+          font-style: normal;
+          line-height: inherit;
+        }
+
+        ol,
+        ul,
+        dl {
+          margin-top: 0;
+          margin-bottom: 16px;
+        }
+
+        ol ol,
+        ul ul,
+        ol ul,
+        ul ol {
+          margin-bottom: 0;
+        }
+
+        dt {
+          font-weight: 700;
+        }
+
+        dd {
+          margin-bottom: 8px;
+          margin-left: 0;
+        }
+
+        blockquote {
+          margin: 0 0 16px;
+        }
+
+        b,
+        strong {
+          font-weight: bolder;
+        }
+
+        small {
+          font-size: 80%;
+        }
+
+        sub,
+        sup {
+          position: relative;
+          font-size: 75%;
+          line-height: 0;
+          vertical-align: baseline;
+        }
+
+        sub {
+          bottom: -0.25em;
+        }
+
+        sup {
+          top: -0.5em;
+        }
+
+        a {
+          color: #007bff;
+          text-decoration: none;
+          background-color: transparent;
+        }
+
+        a:hover {
+          color: #0056b3;
+          text-decoration: underline;
+        }
+
+        a:not([href]) {
+          color: inherit;
+          text-decoration: none;
+        }
+
+        a:not([href]):hover {
+          color: inherit;
+          text-decoration: none;
+        }
+
+        pre,
+        code,
+        kbd,
+        samp {
+          font-family: SFMono-Regular, Menlo, Monaco, Consolas,
+            'Liberation Mono', 'Courier New', monospace;
+          font-size: 1em;
+        }
+
+        pre {
+          margin-top: 0;
+          margin-bottom: 16px;
+          overflow: auto;
+        }
+
+        figure {
+          margin: 0 0 16px;
+        }
+
+        img {
+          vertical-align: middle;
+          border-style: none;
+        }
+
+        svg {
+          overflow: hidden;
+          vertical-align: middle;
+        }
+
+        table {
+          border-collapse: collapse;
+        }
+
+        caption {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          color: #6c757d;
+          text-align: left;
+          caption-side: bottom;
+        }
+
+        th {
+          text-align: inherit;
+        }
+
+        label {
+          display: inline-block;
+          margin-bottom: 8px;
+        }
+
+        button {
+          border-radius: 0;
+        }
+
+        button:focus {
+          outline: 1px dotted;
+          outline: 5px auto -webkit-focus-ring-color;
+        }
+
+        input,
+        button,
+        select,
+        optgroup,
+        textarea {
+          margin: 0;
+          font-family: inherit;
+          font-size: inherit;
+          line-height: inherit;
+        }
+
+        button,
+        input {
+          overflow: visible;
+        }
+
+        button,
+        select {
+          text-transform: none;
+        }
+
+        select {
+          word-wrap: normal;
+        }
+
+        button,
+        [type='button'],
+        [type='reset'],
+        [type='submit'] {
+          -webkit-appearance: button;
+        }
+
+        button:not(:disabled),
+        [type='button']:not(:disabled),
+        [type='reset']:not(:disabled),
+        [type='submit']:not(:disabled) {
+          cursor: pointer;
+        }
+
+        button::-moz-focus-inner,
+        [type='button']::-moz-focus-inner,
+        [type='reset']::-moz-focus-inner,
+        [type='submit']::-moz-focus-inner {
+          padding: 0;
+          border-style: none;
+        }
+
+        input[type='radio'],
+        input[type='checkbox'] {
+          box-sizing: border-box;
+          padding: 0;
+        }
+
+        input[type='date'],
+        input[type='time'],
+        input[type='datetime-local'],
+        input[type='month'] {
+          -webkit-appearance: listbox;
+        }
+
+        textarea {
+          overflow: auto;
+          resize: vertical;
+        }
+
+        fieldset {
+          min-width: 0;
+          padding: 0;
+          margin: 0;
+          border: 0;
+        }
+
+        legend {
+          display: block;
+          width: 100%;
+          max-width: 100%;
+          padding: 0;
+          margin-bottom: 8px;
+          font-size: 24px;
+          line-height: inherit;
+          color: inherit;
+          white-space: normal;
+        }
+
+        progress {
+          vertical-align: baseline;
+        }
+
+        [type='number']::-webkit-inner-spin-button,
+        [type='number']::-webkit-outer-spin-button {
+          height: auto;
+        }
+
+        [type='search'] {
+          outline-offset: -2px;
+          -webkit-appearance: none;
+        }
+
+        [type='search']::-webkit-search-decoration {
+          -webkit-appearance: none;
+        }
+
+        ::-webkit-file-upload-button {
+          font: inherit;
+          -webkit-appearance: button;
+        }
+
+        output {
+          display: inline-block;
+        }
+
+        summary {
+          display: list-item;
+          cursor: pointer;
+        }
+
+        template {
+          display: none;
+        }
+
+        [hidden] {
+          display: none !important;
+        }
+      </style><style>
+        :host {
+          --size-gap-half: 4px;
+          --size-gap: 8px;
+          --size-gap-double: 16px;
+          --size-gap-triple: 24px;
+          --size-gap-quad: 32px;
+
+          --size-font-small: 14px;
+          --size-font: 16px;
+          --size-font-big: 20px;
+          --size-font-bigger: 24px;
+
+          --color-accents-1: #808080;
+          --color-accents-2: #222222;
+          --color-accents-3: #404040;
+
+          --font-stack-monospace: 'SFMono-Regular', Consolas, 'Liberation Mono',
+            Menlo, Courier, monospace;
+
+          --color-ansi-selection: rgba(95, 126, 151, 0.48);
+          --color-ansi-bg: #111111;
+          --color-ansi-fg: #cccccc;
+
+          --color-ansi-white: #777777;
+          --color-ansi-black: #141414;
+          --color-ansi-blue: #00aaff;
+          --color-ansi-cyan: #88ddff;
+          --color-ansi-green: #98ec65;
+          --color-ansi-magenta: #aa88ff;
+          --color-ansi-red: #ff5555;
+          --color-ansi-yellow: #ffcc33;
+          --color-ansi-bright-white: #ffffff;
+          --color-ansi-bright-black: #777777;
+          --color-ansi-bright-blue: #33bbff;
+          --color-ansi-bright-cyan: #bbecff;
+          --color-ansi-bright-green: #b6f292;
+          --color-ansi-bright-magenta: #cebbff;
+          --color-ansi-bright-red: #ff8888;
+          --color-ansi-bright-yellow: #ffd966;
+        }
+
+        .mono {
+          font-family: var(--font-stack-monospace);
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          margin-bottom: var(--size-gap);
+          font-weight: 500;
+          line-height: 1.5;
+        }
+
+        h1 {
+          font-size: 40px;
+        }
+        h2 {
+          font-size: 32px;
+        }
+        h3 {
+          font-size: 28px;
+        }
+        h4 {
+          font-size: 24px;
+        }
+        h5 {
+          font-size: 20px;
+        }
+        h6 {
+          font-size: 16px;
+        }
+      </style><style>
+        
+  [data-nextjs-dialog-overlay] {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    z-index: 9000;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10vh 15px 0;
+  }
+
+  @media (max-height: 812px) {
+    [data-nextjs-dialog-overlay] {
+      padding: 15px 15px 0;
+    }
+  }
+
+  [data-nextjs-dialog-backdrop] {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(17, 17, 17, 0.2);
+    pointer-events: all;
+    z-index: -1;
+  }
+
+  [data-nextjs-dialog-backdrop-fixed] {
+    cursor: not-allowed;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+  }
+
+        
+  [data-nextjs-toast] {
+    position: fixed;
+    bottom: var(--size-gap-double);
+    left: var(--size-gap-double);
+    max-width: 420px;
+    z-index: 9000;
+  }
+
+  @media (max-width: 440px) {
+    [data-nextjs-toast] {
+      max-width: 90vw;
+      left: 5vw;
+    }
+  }
+
+  [data-nextjs-toast-wrapper] {
+    padding: 16px;
+    border-radius: var(--size-gap-half);
+    font-weight: 500;
+    color: var(--color-ansi-bright-white);
+    background-color: var(--color-ansi-red);
+    box-shadow: 0px var(--size-gap-double) var(--size-gap-quad)
+      rgba(0, 0, 0, 0.25);
+  }
+
+        
+  [data-nextjs-dialog] {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    outline: none;
+    background: white;
+    border-radius: var(--size-gap);
+    box-shadow: 0 var(--size-gap-half) var(--size-gap-double)
+      rgba(0, 0, 0, 0.25);
+    max-height: calc(100% - 56px);
+    overflow-y: hidden;
+  }
+
+  @media (max-height: 812px) {
+    [data-nextjs-dialog-overlay] {
+      max-height: calc(100% - 15px);
+    }
+  }
+
+  @media (min-width: 576px) {
+    [data-nextjs-dialog] {
+      max-width: 540px;
+      box-shadow: 0 var(--size-gap) var(--size-gap-quad) rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  @media (min-width: 768px) {
+    [data-nextjs-dialog] {
+      max-width: 720px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    [data-nextjs-dialog] {
+      max-width: 960px;
+    }
+  }
+
+  [data-nextjs-dialog-banner] {
+    position: relative;
+  }
+  [data-nextjs-dialog-banner].banner-warning {
+    border-color: var(--color-ansi-yellow);
+  }
+  [data-nextjs-dialog-banner].banner-error {
+    border-color: var(--color-ansi-red);
+  }
+
+  [data-nextjs-dialog-banner]::after {
+    z-index: 2;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    /* banner width: */
+    border-top-width: var(--size-gap-half);
+    border-bottom-width: 0;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: inherit;
+    border-bottom-color: transparent;
+  }
+
+  [data-nextjs-dialog-content] {
+    overflow-y: auto;
+    border: none;
+    margin: 0;
+    /* calc(padding + banner width offset) */
+    padding: calc(var(--size-gap-double) + var(--size-gap-half))
+      var(--size-gap-double);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  [data-nextjs-dialog-content] > [data-nextjs-dialog-header] {
+    flex-shrink: 0;
+    margin-bottom: var(--size-gap-double);
+  }
+  [data-nextjs-dialog-content] > [data-nextjs-dialog-body] {
+    position: relative;
+    flex: 1 1 auto;
+  }
+
+        
+  [data-nextjs-dialog-left-right] {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+  [data-nextjs-dialog-left-right] > nav > button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: calc(var(--size-gap-double) + var(--size-gap));
+    height: calc(var(--size-gap-double) + var(--size-gap));
+    font-size: 0;
+    border: none;
+    background-color: rgba(255, 85, 85, 0.1);
+    color: var(--color-ansi-red);
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+  }
+  [data-nextjs-dialog-left-right] > nav > button > svg {
+    width: auto;
+    height: calc(var(--size-gap) + var(--size-gap-half));
+  }
+  [data-nextjs-dialog-left-right] > nav > button:hover {
+    background-color: rgba(255, 85, 85, 0.2);
+  }
+  [data-nextjs-dialog-left-right] > nav > button:disabled {
+    background-color: rgba(255, 85, 85, 0.1);
+    color: rgba(255, 85, 85, 0.4);
+    cursor: not-allowed;
+  }
+
+  [data-nextjs-dialog-left-right] > nav > button:first-of-type {
+    border-radius: var(--size-gap-half) 0 0 var(--size-gap-half);
+    margin-right: 1px;
+  }
+  [data-nextjs-dialog-left-right] > nav > button:last-of-type {
+    border-radius: 0 var(--size-gap-half) var(--size-gap-half) 0;
+  }
+
+  [data-nextjs-dialog-left-right] > button:last-of-type {
+    border: 0;
+    padding: 0;
+
+    background-color: transparent;
+    appearance: none;
+
+    opacity: 0.4;
+    transition: opacity 0.25s ease;
+  }
+  [data-nextjs-dialog-left-right] > button:last-of-type:hover {
+    opacity: 0.7;
+  }
+
+        
+  [data-nextjs-codeframe] {
+    overflow: auto;
+    border-radius: var(--size-gap-half);
+    background-color: var(--color-ansi-bg);
+    color: var(--color-ansi-fg);
+  }
+  [data-nextjs-codeframe]::selection,
+  [data-nextjs-codeframe] *::selection {
+    background-color: var(--color-ansi-selection);
+  }
+  [data-nextjs-codeframe] * {
+    color: inherit;
+    background-color: transparent;
+    font-family: var(--font-stack-monospace);
+  }
+
+  [data-nextjs-codeframe] > * {
+    margin: 0;
+    padding: calc(var(--size-gap) + var(--size-gap-half))
+      calc(var(--size-gap-double) + var(--size-gap-half));
+  }
+  [data-nextjs-codeframe] > div {
+    display: inline-block;
+    width: auto;
+    min-width: 100%;
+    border-bottom: 1px solid var(--color-ansi-bright-black);
+  }
+  [data-nextjs-codeframe] > div > p {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    margin: 0;
+  }
+  [data-nextjs-codeframe] > div > p:hover {
+    text-decoration: underline dotted;
+  }
+  [data-nextjs-codeframe] div > p > svg {
+    width: auto;
+    height: 1em;
+    margin-left: 8px;
+  }
+  [data-nextjs-codeframe] div > pre {
+    overflow: hidden;
+    display: inline-block;
+  }
+
+        
+  [data-nextjs-terminal] {
+    border-radius: var(--size-gap-half);
+    background-color: var(--color-ansi-bg);
+    color: var(--color-ansi-fg);
+  }
+  [data-nextjs-terminal]::selection,
+  [data-nextjs-terminal] *::selection {
+    background-color: var(--color-ansi-selection);
+  }
+  [data-nextjs-terminal] * {
+    color: inherit;
+    background-color: transparent;
+    font-family: var(--font-stack-monospace);
+  }
+  [data-nextjs-terminal] > * {
+    margin: 0;
+    padding: calc(var(--size-gap) + var(--size-gap-half))
+      calc(var(--size-gap-double) + var(--size-gap-half));
+  }
+
+  [data-nextjs-terminal] pre {
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+
+        
+        
+  .nextjs-container-build-error-header > h4 {
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nextjs-container-build-error-body footer {
+    margin-top: var(--size-gap);
+  }
+  .nextjs-container-build-error-body footer p {
+    margin: 0;
+  }
+
+  .nextjs-container-build-error-body small {
+    color: #757575;
+  }
+
+        
+  .nextjs-container-errors-header > h1 {
+    font-size: var(--size-font-big);
+    line-height: var(--size-font-bigger);
+    font-weight: bold;
+    margin: 0;
+    margin-top: calc(var(--size-gap-double) + var(--size-gap-half));
+  }
+  .nextjs-container-errors-header small {
+    font-size: var(--size-font-small);
+    color: var(--color-accents-1);
+    margin-left: var(--size-gap-double);
+  }
+  .nextjs-container-errors-header small > span {
+    font-family: var(--font-stack-monospace);
+  }
+  .nextjs-container-errors-header > p {
+    font-family: var(--font-stack-monospace);
+    font-size: var(--size-font-small);
+    line-height: var(--size-font-big);
+    font-weight: bold;
+    margin: 0;
+    margin-top: var(--size-gap-half);
+    color: var(--color-ansi-red);
+    white-space: pre-wrap;
+  }
+  .nextjs-container-errors-header > div > small {
+    margin: 0;
+    margin-top: var(--size-gap-half);
+  }
+  .nextjs-container-errors-header > p > a {
+    color: var(--color-ansi-red);
+  }
+
+  .nextjs-container-errors-body > h2:not(:first-child) {
+    margin-top: calc(var(--size-gap-double) + var(--size-gap));
+  }
+  .nextjs-container-errors-body > h2 {
+    margin-bottom: var(--size-gap);
+    font-size: var(--size-font-big);
+  }
+
+  .nextjs-toast-errors-parent {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  .nextjs-toast-errors-parent:hover {
+    transform: scale(1.1);
+  }
+  .nextjs-toast-errors {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .nextjs-toast-errors > svg {
+    margin-right: var(--size-gap);
+  }
+  .nextjs-toast-errors-hide-button {
+    margin-left: var(--size-gap-triple);
+    border: none;
+    background: none;
+    color: var(--color-ansi-bright-white);
+    padding: 0;
+    transition: opacity 0.25s ease;
+    opacity: 0.7;
+  }
+  .nextjs-toast-errors-hide-button:hover {
+    opacity: 1;
+  }
+
+        
+  button[data-nextjs-data-runtime-error-collapsed-action] {
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: var(--size-font-small);
+    line-height: var(--size-font-bigger);
+    color: var(--color-accents-3);
+  }
+
+  [data-nextjs-call-stack-frame]:not(:last-child),
+  [data-nextjs-component-stack-frame]:not(:last-child) {
+    margin-bottom: var(--size-gap-double);
+  }
+
+  [data-nextjs-call-stack-frame] > h3,
+  [data-nextjs-component-stack-frame] > h3 {
+    margin-top: 0;
+    margin-bottom: var(--size-gap);
+    font-family: var(--font-stack-monospace);
+    font-size: var(--size-font);
+    color: #222;
+  }
+  [data-nextjs-call-stack-frame] > h3[data-nextjs-frame-expanded='false'] {
+    color: #666;
+  }
+  [data-nextjs-call-stack-frame] > div {
+    display: flex;
+    align-items: center;
+    padding-left: calc(var(--size-gap) + var(--size-gap-half));
+    font-size: var(--size-font-small);
+    color: #999;
+  }
+  [data-nextjs-call-stack-frame] > div > svg {
+    width: auto;
+    height: var(--size-font-small);
+    margin-left: var(--size-gap);
+
+    display: none;
+  }
+
+  [data-nextjs-call-stack-frame] > div[data-has-source] {
+    cursor: pointer;
+  }
+  [data-nextjs-call-stack-frame] > div[data-has-source]:hover {
+    text-decoration: underline dotted;
+  }
+  [data-nextjs-call-stack-frame] > div[data-has-source] > svg {
+    display: unset;
+  }
+
+      </style><div data-nextjs-dialog-overlay="true"><div data-nextjs-dialog-backdrop="true"></div><div data-nextjs-dialog="true" tabindex="-1" role="dialog" aria-labelledby="nextjs__container_errors_label" aria-describedby="nextjs__container_errors_desc" aria-modal="true"><div data-nextjs-dialog-banner="true" class="banner-error"></div><div data-nextjs-dialog-content="true"><div data-nextjs-dialog-header="true" class="nextjs-container-errors-header"><div data-nextjs-dialog-left-right="true"><nav><button type="button" disabled="" aria-disabled="true"><svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><title>previous</title><path d="M6.99996 1.16666L1.16663 6.99999L6.99996 12.8333M12.8333 6.99999H1.99996H12.8333Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></button><button type="button"><svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><title>next</title><path d="M6.99996 1.16666L12.8333 6.99999L6.99996 12.8333M1.16663 6.99999H12H1.16663Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>&nbsp;<small><span>1</span> of <span>4</span> unhandled errors</small></nav><button data-nextjs-errors-dialog-left-right-close-button="true" type="button" aria-label="Close"><span aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></button></div><h1 id="nextjs__container_errors_label">Unhandled Runtime Error</h1><p id="nextjs__container_errors_desc">Error: Objects are not valid as a React child (found: object with keys {image, name, meal}). If you meant to render a collection of children, use an array instead.</p></div><div data-nextjs-dialog-body="true" class="nextjs-container-errors-body"><h2>Call Stack</h2><div data-nextjs-call-stack-frame="true"><h3 data-nextjs-frame-expanded="false">throwOnInvalidObjectType</h3><div><span>node_modules/react-dom/cjs/react-dom.development.js (14887:0)</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></div></div><div data-nextjs-call-stack-frame="true"><h3 data-nextjs-frame-expanded="false">reconcileChildFibers</h3><div><span>node_modules/react-dom/cjs/react-dom.development.js (15828:0)</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></div></div><div data-nextjs-call-stack-frame="true"><h3 data-nextjs-frame-expanded="false">reconcileChildren</h3><div><span>node_modules/react-dom/cjs/react-dom.development.js (19167:0)</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></div></div><div data-nextjs-call-stack-frame="true"><h3 data-nextjs-frame-expanded="false">updateHostComponent</h3><div><span>node_modules/react-dom/cjs/react-dom.development.js (19924:0)</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></div></div><div data-nextjs-call-stack-frame="true"><h3 data-nextjs-frame-expanded="false">beginWork</h3><div><span>node_modules/react-dom/cjs/react-dom.development.js (21618:0)</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></div></div><div data-nextjs-call-stack-frame="true"><h3 data-nextjs-frame-expanded="false">HTMLUnknownElement.callCallback</h3><div><span>node_modules/react-dom/cjs/react-dom.development.js (4164:0)</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></div></div><div data-nextjs-call-stack-frame="true"><h3 data-nextjs-frame-expanded="false">Object.invokeGuardedCallbackDev</h3><div><span>node_modules/react-dom/cjs/react-dom.development.js (4213:0)</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></div></div><div data-nextjs-call-stack-frame="true"><h3 data-nextjs-frame-expanded="false">invokeGuardedCallback</h3><div><span>node_modules/react-dom/cjs/react-dom.development.js (4277:0)</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></div></div><div data-nextjs-call-stack-frame="true"><h3 data-nextjs-frame-expanded="false">beginWork$1</h3><div><span>node_modules/react-dom/cjs/react-dom.development.js (27451:0)</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></div></div><div data-nextjs-call-stack-frame="true"><h3 data-nextjs-frame-expanded="false">performUnitOfWork</h3><div><span>node_modules/react-dom/cjs/react-dom.development.js (26557:0)</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></div></div><div data-nextjs-call-stack-frame="true"><h3 data-nextjs-frame-expanded="false">workLoopSync</h3><div><span>node_modules/react-dom/cjs/react-dom.development.js (26466:0)</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></div></div><div data-nextjs-call-stack-frame="true"><h3 data-nextjs-frame-expanded="false">renderRootSync</h3><div><span>node_modules/react-dom/cjs/react-dom.development.js (26434:0)</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></div></div><div data-nextjs-call-stack-frame="true"><h3 data-nextjs-frame-expanded="false">performConcurrentWorkOnRoot</h3><div><span>node_modules/react-dom/cjs/react-dom.development.js (25738:0)</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></div></div><div data-nextjs-call-stack-frame="true"><h3 data-nextjs-frame-expanded="false">workLoop</h3><div><span>node_modules/scheduler/cjs/scheduler.development.js (266:0)</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></div></div><div data-nextjs-call-stack-frame="true"><h3 data-nextjs-frame-expanded="false">flushWork</h3><div><span>node_modules/scheduler/cjs/scheduler.development.js (239:0)</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></div></div><div data-nextjs-call-stack-frame="true"><h3 data-nextjs-frame-expanded="false">MessagePort.performWorkUntilDeadline</h3><div><span>node_modules/scheduler/cjs/scheduler.development.js (533:0)</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></div></div></div></div></div></div></template></nextjs-portal></body></html>
