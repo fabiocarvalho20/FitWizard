@@ -47,7 +47,7 @@ export default async function handler(
           id: session.user.id,
         },
       },
-      diet: strDiet,
+      diet: strDiet ?? "",
       name: dietName,
     },
   });
