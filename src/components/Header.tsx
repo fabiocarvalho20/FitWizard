@@ -40,7 +40,7 @@ export default function Header({ user }: HeaderProps) {
 
       <Avatar
         id="profileImage"
-        onClick={(e) => {
+        onClick={(e: any) => {
           setAnchorEl(e.currentTarget);
         }}
         alt={user.name || ""}
