@@ -250,7 +250,7 @@ function Diet({ user }: DietProps) {
             </Card>
           </Box>
         )}{" "}
-        {!diet && <h2>Comece sua jornada crianto uma dieta no botão acima</h2>}
+        {!diet && <h3>Comece sua jornada crianto uma dieta no botão acima</h3>}
       </div>
     </>
   );
