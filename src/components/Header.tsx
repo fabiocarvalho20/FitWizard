@@ -37,7 +37,6 @@ export default function Header({ user }: HeaderProps) {
           </Link>
         </div>
       </div>
-      <p>{user.email}</p>
       <Avatar
         id="profileImage"
         onClick={(e: any) => {
