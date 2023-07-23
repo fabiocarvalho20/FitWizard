@@ -158,6 +158,7 @@ function Diet({ user }: DietProps) {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
+            overflowX: "scroll",
           }}
         >
           {diets?.map((diet) => (

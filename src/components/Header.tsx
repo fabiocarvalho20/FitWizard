@@ -55,7 +55,7 @@ export default function Header({ user }: HeaderProps) {
           "aria-labelledby": "basic-button",
         }}
       >
-        <MenuItem onClick={() => signOut()}>sign out</MenuItem>
+        <MenuItem onClick={() => signOut()}>log out</MenuItem>
       </Menu>
     </div>
   );
