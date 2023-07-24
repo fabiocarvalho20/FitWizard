@@ -16,7 +16,7 @@ export const authOptions = {
       if (session.user && !session.user.input) {
         const userWithInput = await prisma.user.findFirst({
           where: {
-            id: session.user.id,
+            id: session?.user?.id,
           },
           include: {
             input: true,
