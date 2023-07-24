@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
+import { redirect } from "next/navigation";
 import {
   Box,
   Button,
@@ -7,7 +8,6 @@ import {
   InputAdornment,
   Modal,
   TextField,
-  Typography,
 } from "@mui/material";
 import Header from "../components/Header";
 import { useSession } from "next-auth/react";
@@ -41,8 +41,6 @@ type FormPageProps = {
 };
 
 function FormPage({ user }: FormPageProps) {
-  const router = useRouter();
-
   const [open, setOpen] = useState(false);
   const [formData, setFormData] = useState<FormData>({
     goal: user.input?.goal ?? "",
@@ -74,7 +72,7 @@ function FormPage({ user }: FormPageProps) {
     });
     setFormData;
     if (response.ok) {
-      router.push("/");
+      redirect("/");
     }
   };
 
