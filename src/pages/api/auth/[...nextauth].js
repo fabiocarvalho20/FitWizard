@@ -12,8 +12,18 @@ export const authOptions = {
     }),
   ],
   callbacks: {
-    session({ session, user }) {
-      if (session) session.user.id = user.id;
+    async session({ session }) {
+      if (session.user && !session.user.input) {
+        const userWithInput = await prisma.user.findFirst({
+          where: {
+            id: session?.user?.id,
+          },
+          include: {
+            input: true,
+          },
+        });
+        session.user = userWithInput;
+      }
       return session;
     },
   },
