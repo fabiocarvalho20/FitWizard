@@ -12,11 +12,11 @@ export const authOptions = {
     }),
   ],
   callbacks: {
-    async session({ session }) {
-      if (session.user && !session.user.input) {
+    async session({ session, user }) {
+      if (user && !session.user.input) {
         const userWithInput = await prisma.user.findFirst({
           where: {
-            id: session?.user?.id,
+            id: user.id,
           },
           include: {
             input: true,
