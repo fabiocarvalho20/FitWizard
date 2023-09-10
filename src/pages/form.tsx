@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useRouter } from "next/router";
+import { Router, useRouter } from "next/router";
 import { redirect } from "next/navigation";
 import {
   Box,
@@ -12,6 +12,7 @@ import {
 import Header from "../components/Header";
 import { useSession } from "next-auth/react";
 import { User, UserInput } from "@prisma/client";
+import Link from "next/link";
 
 export default function FormPageWrapper() {
   const router = useRouter();
@@ -42,6 +43,7 @@ type FormPageProps = {
 
 function FormPage({ user }: FormPageProps) {
   const [open, setOpen] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
   const [formData, setFormData] = useState<FormData>({
     goal: user.input?.goal ?? "",
     age: user.input?.age ?? "",
@@ -70,11 +72,17 @@ function FormPage({ user }: FormPageProps) {
         "Content-type": "application/json",
       },
     });
+    setSubmitted(true);
     setFormData;
-    if (response.ok) {
-      redirect("/");
-    }
   };
+
+  const router = useRouter();
+
+  useEffect(() => {
+    if (submitted === true) {
+      router.replace("/");
+    }
+  }, [submitted]);
 
   return (
     <>

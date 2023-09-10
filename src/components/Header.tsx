@@ -31,9 +31,18 @@ export default function Header({ user }: HeaderProps) {
             href="/form"
             style={{
               color: "white",
+              marginRight: "0.75rem",
             }}
           >
             form
+          </Link>
+          <Link
+            href="/fitpro"
+            style={{
+              color: "white",
+            }}
+          >
+            fitPro
           </Link>
         </div>
       </div>

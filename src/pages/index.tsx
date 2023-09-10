@@ -9,17 +9,14 @@ import {
   Chip,
   CircularProgress,
   IconButton,
-  Menu,
-  MenuItem,
   Modal,
   TextField,
   Tooltip,
   Typography,
 } from "@mui/material";
-import ListIcon from "@mui/icons-material/List";
 import React, { useEffect, useMemo, useState } from "react";
 import MealCard from "@/components/mealCard";
-import { set, z } from "zod";
+import { z } from "zod";
 import { dietSchema } from "@/utils/types";
 import AddCircleIcon from "@mui/icons-material/AddCircle";
 
